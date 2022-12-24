@@ -1,5 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-hiii
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter">
+                    <h4>Age Calculator</h4>
+                </div>
+                <div class="block">
+                    <p class="title">Day</p>
+                    <input type="text" name="date" id="date" placeholder="dd" required="required" minlength="1"
+                        maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title">Month</p>
+                    <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1"
+                        maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title">Year</p>
+                    <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4"
+                        maxlength="4" />
+                </div>
+            </div>
+            <div class="base">
+                <div class="enter">
+                    <input type="button" name="submit" value="Calculate"" onclick="age()" />
+                </div>
+            </div>
+            <div id="age"></div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    <div id="time">
+        <div class="circle" style="--clr: #FF0000">
+            <div class="dots hr_dot"></div>
+            <svg>
+<circle cx="75" cy="75" r="70"></circle>
+<circle cx="75" cy="75" r="70" id="hh"></circle>
+</svg>
+            <div id="hours">00</div>
+        </div>
+        <div class="circle" style="--clr: #FFA500">
+            <div class="dots min_dot"></div>
+            <svg>
+<circle cx="75" cy="75" r="70"></circle>
+<circle cx="75" cy="75" r="70" id="mm"></circle>
+</svg>
+            <div id="minutes">00</div>
+        </div>
+        <div class="circle" style="--clr: #04fc43">
+            <div class="dots sec_dot"></div>
+            <svg>
+<circle cx="75" cy="75" r="70"></circle>
+<circle cx="75" cy="75" r="70" id="ss"></circle>
+</svg>
+            <div id="seconds">00</div>
+        </div>
+        <div class="ap">
+            <div id="ampm">AM</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</div>
+</body>
 
 </html>
